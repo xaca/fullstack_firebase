@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create - Insertar</title>
+    <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script type="module" src="js/modulos/crud/create.js"></script>
+    
+</head>
+<body>
+    <!--TODO:Borrar los campos y actualizar el uuid-->
+    <nav id="menu"></nav>
+    <h1>Ingresar producto</h1>
+    <form action="" id="frm_producto">
+        <label for="nombre">
+            Nombre:
+            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingrese el nombre del producto">
+        </label><br>
+        <label for="descripcion">
+            Descripción:
+            <textarea class="form-control" placeholder="Descripción del producto" name="descripcion" id="descripcion" cols="20" rows="5"></textarea>
+        </label><br>
+        <label for="cantidad">
+            Cantidad:
+            <input class="form-control" type="number" name="cantidad" id="cantidad" min="1" max="20">
+        </label><br>
+        <label for="precio">
+            Precio:
+            <input class="form-control" type="text" id="precio" name="precio">
+        </label><br>
+            Imagen:
+        <input type="file" name="" class="btn" id="archivo_imagen"><br>
+        <input type="submit" class="btn btn-primary" value="Enviar" id="btn_enviar">
+    </form>
+</body>
+</html>

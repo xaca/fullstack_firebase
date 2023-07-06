@@ -1,0 +1,21 @@
+{
+  "name": "fullstack",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "clean:output": "rimraf ./dist",
+    "dev": "npm run clean:output && parcel ./src/*.html",
+    "build": "npm run clean:output && parcel build ./src/*.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.9.2",
+    "process": "^0.11.10",
+    "rimraf": "^5.0.1"
+  },
+  "dependencies": {
+    "firebase": "^9.14.0"
+  }
+}

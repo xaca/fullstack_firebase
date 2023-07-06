@@ -1,0 +1,47 @@
+.ocultar{
+    display: none;
+}
+.producto{
+    display: flex;
+    border-radius: 10px;
+    border: 1px solid goldenrod;
+    background-color: bisque;
+    width: 236px;
+    height: 150px;
+    padding: 9px;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin: 5px auto;
+}
+#galeria{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; 
+    background-color: rgb(47, 33, 38); 
+    width: 500px; 
+    margin:0 auto;
+}
+
+#paginador { 
+    grid-area: 4 / 1 / 5 / 3;
+    margin: 20px auto;
+    width: 200px;
+    text-align: center; 
+} 
+
+a{
+    text-decoration: none;
+    color:rgb(47, 33, 38);
+}
+.seleccionado{
+    text-decoration: underline;
+    color:brown;
+    margin:5px;
+}
+#frm_producto{
+    margin:0 auto;
+    width: 600px;
+    border:1px solid blue;
+}
