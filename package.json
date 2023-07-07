@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "clean:output": "rimraf ./dist",
-    "dev": "npm run clean:output && parcel ./src/*.html",
-    "build": "npm run clean:output && parcel build ./src/*.html"
+    "clean:dev": "rimraf ./dist",
+    "clean:prod": "rimraf ./public",
+    "dev": "npm run clean:dev && parcel ./src/*.html",
+    "build": "npm run clean:prod && parcel build ./src/*.html --dist-dir ./public"
   },
   "keywords": [],
   "author": "",
