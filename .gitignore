@@ -1,6 +1,7 @@
 #Configuración proyecto
 .parcel-cache
 .firebaserc
+.firebase
 package-lock.json
 src/js/modulos/utils/config.js
 dist
