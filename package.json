@@ -6,7 +6,7 @@
     "clean:dev": "rimraf ./dist",
     "clean:prod": "rimraf ./public",
     "dev": "npm run clean:dev && parcel ./src/*.html",
-    "build": "npm run clean:prod && parcel build ./src/*.html --dist-dir ./public"
+    "build": "npm run clean:prod && parcel build ./src/*.html --dist-dir ./public && firebase deploy"
   },
   "keywords": [],
   "author": "",

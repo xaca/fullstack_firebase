@@ -96,7 +96,7 @@ function pintarDatos(){
             <span class="col">${datos[i].descripcion?datos[i].descripcion:""}</span>
             <span class="col">
                 <input type="button" id_producto="${i}" class="btn btn-secondary btn_actualizar" value="Actualizar">
-                <input type="button" id_producto="${i}" class="btn btn-danger btn_borrar" value="Borrar">
+                <input type="button" id_producto="${datos[i].id}" class="btn btn-danger btn_borrar" value="Borrar">
             </span>
         </div>`;
     }

@@ -11,3 +11,8 @@
   - Modifique las reglas de las aplicaciones para que tengan acceso publico (esto es temporal mientras se prueba el proyecto)
   - Ejecute npm run dev 
   - Ingrese a http://localhost:1234/
+
+## Librerias utilizadas
+
+- Firebase
+- UUID - https://github.com/LiosK/UUID.js

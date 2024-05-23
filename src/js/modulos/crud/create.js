@@ -29,6 +29,7 @@ function crearProducto(formData) {
         url:obj.url
     }
     */
+   
     set(_ref(db, `productos/${uuid}`), obj)
     .then(()=>{
         resetCampos();
@@ -52,6 +53,8 @@ function enviarDatos(event) {
         let obj = new FormData(frm);
         obj.append("url",image_url);
         crearProducto(obj);
+    }).catch((error)=>{
+        console.error(error);
     });
 }
 
@@ -66,5 +69,7 @@ function subirImagen(resolve,reject){
         then((downloadURL) => {
             resolve(downloadURL);
         });
+    }).catch((error) => {
+        reject("Error al subir imagen");
     });
 }
